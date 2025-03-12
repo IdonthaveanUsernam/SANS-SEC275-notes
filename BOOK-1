@@ -1,0 +1,13 @@
+*COMPUTER HARDWARE*
+
+-motherboard: central piece who connect all the components of the computer 
+    -sockets: kind of connector that the CPU processor has to connect with the motherboard
+    -buses: connect and move data between components
+
+-Processor: (CPU) is responsible for executing instructions contained in computer programs
+    -cores: is responsible for executings instructions (modern CPU may have multiples cores to perform tasks simultaneously)
+    -clock Speed: A measure of how many CPU cycles can be performed in a second 
+    -context switching: for single core processor the processor share processor time between applications
+
+-RAM: (random access memory) determine the number of actions you can perform at once
+    -speed: RAM is fast to read, so data often go into RAM for faster manipulation for the Processor
