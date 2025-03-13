@@ -11,3 +11,35 @@
 
 -RAM: (random access memory) determine the number of actions you can perform at once
     -speed: RAM is fast to read, so data often go into RAM for faster manipulation for the Processor
+    -Volatility: The data stored in the RAM is deleted when the computer is shutdown
+    -Compatibility DDR# stand for double data rate with the #(3,4,5) meaning the generation. Speed of RAM is measured in MHz
+        So, pay  attention of what generation and speed you motherboard is compatible with
+
+-Types of storage: Storage is a components that provides data storage usually a hard drive or a SSD (solid state drive)
+    -Size: storage can have a different size usually they are smaller for laptop
+    -Capacity: each drive has a maximum capacity (usually drive have a real capacity bellow than their advertised value like 3.8TB for a presumly 4TB of data)
+    -Mechanical vs solid state: Mechanical are usually slow and less reliable over long period of time thant Solid state.
+        Solid state contains no moving part unlike mechanical and are more reliable and faster than mechanical drive.
+
+-GPU (Graphcs Proccessing Unit), it's kind of processor that excel at number crunching
+    -Number crunching: CPU excel at task that involver mathematical operations such a 3D rendering or encryption
+
+-USB: common way of connecting an input device (Universal Serial Bus) their are several generation of USB who can Transfer data with less or more speed
+
+-PS/2: old peripherals support
+
+-Output Devices: devices that accept data from a computer (monitor, printer, etc..)
+    -VGA: Old stuff for A/V output
+    -DVI: newer than VGA but a bit old today
+    -HDMI: more modern and the standar to this day and can also transmit video and audio
+    -Display Port: young brother of HDMI
+    -USB-C: have a wider ranger of capabilities
+
+-Heat sinks: they are devices who purpose is to move away heat from the critical component
+
+-Power supply: PSU (Power supply unit) are taking power and delivering it to the computer components
+
+
+
+
+*DATA STORAGE AND REPRESENTATION*
