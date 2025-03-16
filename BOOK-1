@@ -43,3 +43,37 @@
 
 
 *DATA STORAGE AND REPRESENTATION*
+
+-Bits & Bytes: a bit is 0 or 1 it's known as a boolean value with 1 is on and 0 is off. All data in computer are made of bits
+    - Byte = 8 bits
+    - Kilobytes = 1000 bytes
+    -megabyte = 1000 kilobytes
+    - gigabyte = 1000 megabytes
+    - terabyte = 1000 gigabytes
+alternatively:
+    - 1 byte = 8 bits
+    - 1 kikibyte (KiB) = 1024 bytes
+    - 1 mebibyte (MiB) = 1024 kikibytes
+    - 1 gibiyte (GiB) = 1024 mebibytes
+    - 1 tebibyte (TiB) is 1024 gibibytes
+
+
+*Alternate Number Base*
+
+Important note: when you talk about binary you use the prefix 0b before the number and when you use hexa, use 0x before the number
+
+-Binary: use base of two
+    2⁰ = 1
+    2¹ = 2
+    2² = 4
+    2³ = 8
+    2⁴ = 16
+    2⁵ = 32
+    2⁶ = 64
+    2⁷ = 128
+    2⁸ = 256
+    2⁹ = 512
+    and so on... If you have trouble with what a power mean: https://youtu.be/zdu8dII7zRE?feature=shared
+
+
+
