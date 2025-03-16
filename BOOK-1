@@ -95,8 +95,8 @@ Important note: when you talk about binary you use the prefix 0b before the numb
     Ascii table or other like Unicode permits to encode binary number and hexadecimal number to characters that are drawn to the screen
     You can look up on internet or alternatively here -> /Images/ASCII-Table to see what is look like
 
-*ENCODING* : Is a mechanism enabling us to take data in one format and package it into another one
-    -see here -> for an exemple of encoding and decoding base64 
+*ENCODING* : Is a mechanism enabling us to take data in one format and package it into another one 
+    -see here -> /Images/encoding_manual for an exemple of encoding and decoding base64 
 
 
 
