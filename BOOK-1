@@ -102,7 +102,9 @@ Important note: when you talk about binary you use the prefix 0b before the numb
     To really know wich extension is on a file, file headers have often have something called 'magic numbers' or 'magic bytes' or 'file signaturese'
     you can use hexdump on linux with this command: hexdump -C filename | head
 
-    see here for an exemple -> 
+    see here for an exemple -> /Images/hexdump_file_header
+
+*LOGIC & and DATA MANIPULATION*
     
 
 
