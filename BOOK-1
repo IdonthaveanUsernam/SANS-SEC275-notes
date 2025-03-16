@@ -75,5 +75,7 @@ Important note: when you talk about binary you use the prefix 0b before the numb
     2⁹ = 512
     and so on... If you have trouble with what a power mean: https://youtu.be/zdu8dII7zRE?feature=shared
 
+    You can use a table to convert from binary to decimal -> ![Alt text of the image](https://github.com/IdonthaveanUsernam/SANS-SEC275-notes/blob/7d36f0605c9b5af3f03a72bdc11425adfeb95be8/Images/table_binary_number.png)
+
 
 
