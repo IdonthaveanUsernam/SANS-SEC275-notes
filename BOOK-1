@@ -105,8 +105,70 @@ Important note: when you talk about binary you use the prefix 0b before the numb
     see here for an exemple -> /Images/hexdump_file_header
 
 *LOGIC & and DATA MANIPULATION*
-    
 
+-Boolean logic: 0 is false and 1 is true
+-Truth Tables: Show all possible outcomes from inputs 
+-Logical AND: check if the Two inouts are both true. If they are both True, the ouput is True, if one or more is False, the ouput will be false
+    -Here is the Truth table
+    A	B	A and B
+    0	0	0
+    1	0	0
+    0	1	0
+    1	1	1
+
+-Logical OR: check if at least one of the inputs are true. If it is then the output is also True
+    -Here is the truth table:
+    A	B	A OR B
+    0	0	0
+    1	0	1
+    0	1	1
+    1	1	1
+
+-Logical NOT: take one input and invert it so 1 become 0 and 0 become 1
+    -Here is the truth table:
+    A	Not A
+    0	1
+    1	0
+
+-Logical NAND: Is a AND circuit followed by a NOT circuit
+    -Here is the Truth table:
+    A	B	A and B	    not (A and B)→ A NAND B 
+    0	0	0	        1
+    1	0	0	        1
+    0	1	0	        1
+    1	1	1	        0
+
+-Logical NOR: Is a OR circuit followed by a NOT circuit
+    -Here is the Truth Table
+    A	B	A OR B	    not (A OR B)→ A NOR B 
+    0	0	0	        1
+    1	0	1	        0
+    0	1	1	        0
+    1	1	1	        0
+
+-Logical XOR: Exclusive-OR: check if only one side or the other is true but not Both, if only one input is true, then the ouput is true
+    -Here is the Truth table
+    A	B	A XOR B
+    0	0	0
+    1	0	1
+    0	1	1
+    1	1	0
+    By is nature, XOR is used a lot in cryptography
+    for exemple:
+    1100 XOR 0101 = 1001 you can treat 1100 as you're data, 0101 as you're key and 1001 as you're encrypter data
+    and you cans use the key to decrypt you're data:
+    1001 XOR 0101 = 1100 
+
+*Storing data and files*
+
+File systems: They are like a protocol to store and access files to the physical storage media, not that the operating system need to understand this protocol
+            in order to work. Every storage is broken down in cluster who are determined by the filesystem. For exemple if you have 64kb and you're clusrer has a size of 32kb,
+            then, you're 64kb file will take up 2 clusters. Note that even if you store a file that is smaller than 32Kb, it will take an entire cluster
+            and the remaining space will be wasted. When you store a file, the disk also store metadata, Which store various information about the file like name and the address where the content
+            of the file can be found. If a file is deleted, then the index entry is removed but not the file, that's why you can recover deleted file, if they are not yet been overwritted
+            When you secure delete a file, the data is written over the content of the deleted file instead of just marking the cluster as overwritable
+
+        
 
 
 
