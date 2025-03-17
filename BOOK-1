@@ -195,7 +195,7 @@ Iaas - Infrastructure as a Service: Storage, networking, compute, containers... 
 Paas - Platform as a service provide software and hardware designed to enable you to deliver applications and test you're code
     with database pre-made for exemple
 
-Here is a scheme who help you understand the management of cloud computing /Images/
+Here is a scheme who help you understand the management of cloud computing /Images/saas-vs-paas-vs-iaas
 
 *OPERATING SYSTEM*: Software that run on the computer which maanges how the computer operates
 Ex: Ubuntu Linux, Mac OS, Android
