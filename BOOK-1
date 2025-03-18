@@ -203,7 +203,7 @@ Ex: Ubuntu Linux, Mac OS, Android
 Each OS as it own strengths and weaknesses
 
 -Kernel: first part of the OS loaded and has complete control over the computer. Control the computer most sensitive information and functionality it is loaded into a protected region of memory
-        to prevent aaccidental or malicious corruption by other programs. It is responsible of the loading of new programs, handling input and output between perpherals, and managing access tp the hardware resources
+        to prevent aaccidental or malicious corruption by other programs. It is responsible of the loading of new programs, handling input and output between perpherals, and managing access to the hardware resources
 -Process: A serie of actions or step taken in order to achieve a particular end, a process is created on a computer when a program is requested to be loaded
         and contains all the informations needed for execution
 -Interrupt: Signal that is sent to CPU, which alerts the CPU to a task requirinf it's immediate attention. An interrupt will halt the CPU and cause it to begin executing the corresponding interrupt handler
@@ -227,7 +227,13 @@ Each OS as it own strengths and weaknesses
 
 -Guest OS: OS that run inside the Virtual Machine. The guest is separate from the host OS, and can't directly access the ressouces on the host that is useful for malware analysis.
 
-*HYPERVISOR*
+*HYPERVISOR*: layer of code that allow multiple operating systems to share the same hardware ressources.
+
+-Type 2 Hypervisor: Is when the virtualization is done by a software program that run on a OS
+
+-Type 1 Hypervisor: when the virtualization occur at  the firmware level. There is no host operating system. The virtualization software is the host os
+
+virtualisation is heavily used in cloud computing, cybersecurity and programming
 
 
 
