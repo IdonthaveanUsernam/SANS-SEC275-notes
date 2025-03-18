@@ -236,6 +236,61 @@ Each OS as it own strengths and weaknesses
 virtualisation is heavily used in cloud computing, cybersecurity and programming
 
 
+*LINUX*: linux is a kernel the OS who used a linux kernel is called a linux distribution
 
+-Linux distribution: com in all shape and sizes, and LInux is and incredibly powerful and customizable OS
 
+-Desktop distribution: Come with a GUI
+-Server distribution: Come without a GUI and everything must be done from a terminal.
 
+*Linux Terminal*
+
+when you open the terminal, you see something like this: user@something:~$ -> this is called a prompt and prompting you for input
+here, the user account is called user and the hostname of the computer (that is the name that identifiese the computer on network) is something
+~ this is a shortand for homefolder for root user it is a #.
+
+-Shell: when you open a terminal, it runs the shell automatically. The shell is responsible for displayinng prompt interpreting the command you type running programs and displaying output
+        There are many different shell but the most used is Bash
+
+*Superuser su and sudo*
+
+-Superuser is effectively the administrator account and have the entire control including breaking the system it is usually called root
+you can see weihter you are root or no by typing whoami. To log into root type su root and you will get prompted for the password. su -> switch user
+you can exit the root session by typing exit
+
+Alternatively you can used a program called sudo if it is installed, it allows temporarily take on the privilege of the root account for a single command
+sudo have a configuration file called sudoer which is a list of account that are allowed to use the privileges of the root account. Note that you need to be root to modify the sudoer's file via visudo
+you can edit privileges of entire group of user. You can see what group you are part of with the command groups
+
+*Navigation in the Terminal*
+
+-Listing files: ls which stand for listing
+                You can use ls -l to see in this order: permissions, user, group, file size, creation timestamp, file/folder name
+                You can also pass ls for a specific directory like ls -l Desktop ls -l /home/user/
+
+-Changing directory: cd allows to change directory into a different folder
+                    you can go to folder by typing cd Desktop/ and go back to home with cd /home/user or cd ~ or cd .. (this will get you to the directory one level above)
+                    to see where you are you can type pwd this will print you're working directory
+
+*Folder structure* you can see the root directory by going to cd / and type ls
+
+-bin: used for storing executable files, usually system files not the one the user installed
+-boot: holds the file that Linux uses during boot up process
+-cdrom: for the cdrom
+-dev: contain a folder and associated files for every hardware component on the system
+-etc: usually contain configuration files for installed programs
+-home: folder contain the user directory for every user but not for root
+-lib: contains shared librairies and kernel modules
+-lost+found: if you hard drive has errors and files get lost the orphaned files may get placed here
+-media: use for mounting USB keys and floppy disk
+-mnt: like media
+-opt: any user installed program can  go here if you want
+-proc: every running program will have an entry here with associated files
+-root: home folder for root user
+-run: temporary file system xhich stores runtime information for programs that start early in boot
+-sbin: similar to /bin but usually for administratives purposes
+-srv: holds data used by services running on the system
+-sys: contain information about devices on the system
+-tmp: temporary file system and will be deleted periodically
+-usr: folder for user controlled files it has is own folder structure which map the root folder
+-var: contain system files which tend to increase in size like logs files
