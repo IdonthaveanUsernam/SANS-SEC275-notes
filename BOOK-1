@@ -294,3 +294,69 @@ you can edit privileges of entire group of user. You can see what group you are 
 -tmp: temporary file system and will be deleted periodically
 -usr: folder for user controlled files it has is own folder structure which map the root folder
 -var: contain system files which tend to increase in size like logs files
+
+*File permissions*
+
+a file or folder is owned by a user and a group when ls -l it's user group
+and there are 3 permission mode:
+    -r: read file
+    -w: writing permission
+    -x: execute permission
+
+the first '-' is reserved fir directory, the next 3 '-' are reserved for user permissions, the 3 '-' after are for group permission
+and the last 3 '-' are for anyone else
+
+-Setting file permission
+you can change permission if you are the owner of the file or using sudo or root
+you can change the owner by using the chown command
+you can change the group owner by using the command chgrp
+
+you can add a permission by using chmod +(r or w or x) this will add the or these permissions to everyrone
+you can remove it by using chmod -(r or w or x)
+
+alternatively you can use numerical number (read = 4, write = 2, execute = 1)
+so for setting read en write, chmod 6 (4+2)
+
+You can use this binary table to help you:
+
+R W X
+0 0 0
+
+for our example, read and write:
+
+R W X
+1 1 0
+
+0b110 = 4 +2 = 6
+
+*Hidden files*
+if you want to create a file that is hidden, you need to put a '.' before ex: touch .hiddenfile
+
+you can see it by typing ls -a (a stand for all)
+
+*Environment Variable*
+Linux terminal can store data that can be used by programs, this data is ephemral, after you closing the terminal windows, it get back to normal
+you can print env variable by using the 'echo' command
+
+echo $HOME
+you can modify the env varibale by using export if you want you home for this terminal to be in /tmp
+export HOME=/tmp
+and if go to cd ~ and pwd you will notice the change
+
+you can print all env variable by typing printenv
+
+-Path
+
+The path tells the terminal where to look for programs you ask for you can see it by typing echo $PATH the list of directory paths are
+seprated by a colon (:)
+
+you can ask where a program is installed by typing which program_name for exemple wich ls return /usr/bin/ls
+if you use the shell bash for you terminal, you can add a path by adding this at the end of the .bashrc file: export PATH=$PATH:/exemple/of/path
+
+*Previous command*
+
+you can access to last command you typed by pressing the up arrow key or using the reverse search feature by typing crtl + r
+you can see the history of commands by cat the file .bash_history if you are using bash or you can use the command history
+if you want to remove history you can use history -c or erase entry on .bash_history
+
+
