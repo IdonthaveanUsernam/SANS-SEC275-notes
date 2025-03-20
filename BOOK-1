@@ -359,4 +359,55 @@ you can access to last command you typed by pressing the up arrow key or using t
 you can see the history of commands by cat the file .bash_history if you are using bash or you can use the command history
 if you want to remove history you can use history -c or erase entry on .bash_history
 
+*Parameters
+
+commands can take several paramerters in general single letter parameters are with a single dash (ls -al), the next form is
+with full word parameters that are set with double dash like ls --all sometimes you don't even need a dash like ps
+
+sometimes command have built in help for parameters like -h or --help alternatively you can use man to pull up a manual
+for the tool you  want like man ls  to scroll around the man page you can use the arrows keys and left it by pressing q
+
+*Interrupts*
+
+you can quit a program by pressing ctrl +c if the tool don't give you an option to do 
+you can suspend a program by hitting ctrl + z. You can resume hit by typing fg you can also type bg this will keep the program
+running but in the background
+
+*Clearing the Terminal. You can clear the ouput by typing clear or hit CTRL + L
+
+*LINUX COMMANDS 1*
+
+-cp command (copy) allow us to copy a file from one location to another and keeping the original intact
+ex: cp myfile copiedmyfile
+you can also specify the destination of you file
+ex: cp copiedmyfile /home/user/Desktop/copiedfromcopied
+you can also copy a folder with the parameter -r but it will copy everythin that is inside the folder too be aware of this
+
+-mkdir command create a directory
+ex: mkdir folder
+you can specify a full path too
+ex: mkdir /home/linux/newfolder
+you can also make multiple directory at once by using the -p parameters
+ex:mkdir -i first/second/third
+
+-mv command allow moving files and folder from one location to another be aware this will remove the original
+there are many option to the mv command but one very useful is the ability to rename a file
+ex: mv afile renamedfile
+
+-rm command (remove files and folders)
+ex: rm afile
+you can delete a folder by providing the -r paramet and it will delete everything inside
+ex: rm -r folder
+
+-cat command: used to display one or more file
+ex: cat file secondfile
+or
+cat file
+
+-less command: displaying big file
+this will open an interactive program where you can use the arrow key to scroll through the file
+
+-find command used to find files on a system
+first parameter is the directory where you want to search the file and this will search also in the subfolder after you can said the name
+of the file you search for after the parameter -name there are many many option remember to use the man page
 
