@@ -411,3 +411,51 @@ this will open an interactive program where you can use the arrow key to scroll 
 first parameter is the directory where you want to search the file and this will search also in the subfolder after you can said the name
 of the file you search for after the parameter -name there are many many option remember to use the man page
 
+
+*Linux command 2*
+
+-The grep command is used for searching text within files
+
+the first parameter is the search term if i want to search for github in random.txt:
+
+grep "github" random.txt
+by default grep is case sensitive you can make it insensitive by using the -i operator
+
+-The wich command can show you where in your PATH a toool is installed so if wich for a tool return nothing it's maybe because the tool is not in the path
+
+-Apropos command: used to search man pages for keyword, usually to find the appropriate tool to use in a particular situation
+
+-The file command: tell us the filetype of a file by reading the header of the file
+
+-The strings command: ussed to pulling text out of binary files
+
+-wget command: allow us to download files from the internet from the command line
+for exemple if you type wget https://www.google.com/ it will download the homepage of google but nothing will work since it's an html file stored in you're local device
+
+*Chaining commands*
+
+We can chain command together to run one after the other one one line
+
+ls; strings /bin/ls will perform ls after, show strings inside the ls binary, you can enter sleep number_of_secon between command
+to wait for the previous command to finish after executing the next one
+
+We can also use pipes and redirects if we want to
+
+cat /etc/passwd | grep root; sleep 2; ps aux | grep root
+this command will search passwd for details of the root user and then sleep for 2 seconds before listing running process that reference root
+
+you really should practice this one once you master chaining command you will get very powerful with the linux terminal
+
+
+*Linux architecture and components*
+
+-Process 
+
+you can view process that are running on your current user by typing ps. If you want to see all process, use ps aux
+another thing useful is to get a full list of process along with subprocesses and more detail on the paramaeters the processs
+were launched with with the command ps auxf
+
+-Killing 
+
+with top you can the the PID, the number of the process. We can use this number to kill the process
+like kill 43603. Sometimes nothing will happen, you may use the force-quit process kill -9 number
