@@ -459,3 +459,44 @@ were launched with with the command ps auxf
 
 with top you can the the PID, the number of the process. We can use this number to kill the process
 like kill 43603. Sometimes nothing will happen, you may use the force-quit process kill -9 number
+
+
+*Pipes and redirects* allow us to chain command by sending the ouptut of a command to an input of another command with the pipe | character
+
+-Pipes
+
+for example if you want to search for a particular process ps aux | grep bash
+
+-Redirects: take the output of a command and write it to a file. There is to form of redirects, the one that overwrite an existing file or create new one
+for example echo "hello github" > file will create an new file containing hello github. And if you type echo "hello world" > file, the file will contain only hello world
+the file has been overwritten
+
+the other one type of redirect ">>" will create a new file if it doesn't exist or will add the output to the end of the file if the file already exist
+
+*The passwd File*
+
+The passwd file located at /etc/passwd hold information about what user accounts exist on the system and the file /etc/passwd
+hold the password of the users
+
+The big random string next to the users are the password you will see user that don not have these big strings because they are set to nologin in /etc/passwd
+that mean you can't login into the passwd file is readable only by the root user
+
+*Scheduled task* All operating system has some way of scheduling tasks on various linux distro the scheduled taks can be found with cron
+
+you can view all the scheduled tasks for your user by typing crontab -l
+you can edit crontab with crontab -e it will show you the easiest text editor for performing crontab operations
+
+each entry in the crontab must use the following structure:
+
+Minute Hour DayOfMonth Month DayOfWeek Command
+you can use the wildcard operator to specify 'every'. For the command you should specify the absolute path
+
+for example: * * * * * /usr/bin/date >> home/linux/date will send the ouput of date command every minute to the file date
+
+
+*Using SSH*
+
+SSH stand for secure shell it's allow us to connect into a linux computer over internet without a GUI most linux distro comme with ssh preinstalled
+to connect to a SSH you can type ssh username@ipaddress and after this it will ask for the password to that account
+
+sometimes you need a keyfile to connect and you will need to specify the path of the keyfile: ssh -i /path/keyfile username@ipaddress
