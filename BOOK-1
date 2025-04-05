@@ -500,3 +500,53 @@ SSH stand for secure shell it's allow us to connect into a linux computer over i
 to connect to a SSH you can type ssh username@ipaddress and after this it will ask for the password to that account
 
 sometimes you need a keyfile to connect and you will need to specify the path of the keyfile: ssh -i /path/keyfile username@ipaddress
+
+*SEARCH*
+
+-How search works ? seazrch engine use software called crawlers. They start by visiting a page, then looking at all links on that page and make an index of all words on that page
+and after it will folllow the links on the page and eventually index all pages publicly accessible on the internet.
+The actual algorithm that sezarch engine provide use to display relevant search results is secret but we do know that generally if you
+type pizza the first search result you will see will be the page that contain the most keyword pizza
+
+-Constructing a proper search query
+
+Google is keyword-based search engine, that's mean each word is taken on its own and not part of a sentence so to make
+google work better try to remove unnecessary words and make a precise small query.
+
+Bad query: What sould I do if my computer can't connect to the internet .
+Good query: troubleshoot internet computer
+
+-Commands and colons
+
+Google has commands which can be used to refine searches
+
+If you want to search the word pizza only on BBC you can type site:bbc.co.uk pizza
+you can search for specific file type too. filetype:pdf pizza will return only pdf file that contains the word pizza
+
+-Google dorks with these commands, you can searches for content that shouldn't be posted online like Unsecure software, passwords confidentials documents that's called google dorks
+
+-Quotes you can use quotes to return only the exact phrase like "i like pizza" will return only exact matching phrase
+
+-Alternative search engines: All search engine have their own search algortihms for displaying results that can be a good thing to search other search engine
+if you struggle to find a piece of information
+
+*WWW AND SERVING*
+
+-Web servers: Web servers are software that accept and process request according to the HTTP protocol. At the simplest level,
+web server will send HTML back to the browser, which will use HTML to render the web page
+
+-Generic web server: Like Apache and Nginx are configured to use a folder as web root that folder will contain the files needed
+to run the website. The folder should include and index file (like index.html) or (index.php): this is the file that is sent when a request is made to '/'
+
+-Custom web server: are purpose-built programs designed to run one specific site. The routes usually need to be programmed into the
+the software these type of web server are often used by large or complex web applications because they grant more freedom but it's harder to set up
+
+-Port: typicall web server will listen on either port 80(HTTP unencrypted) or 443(HTTPS Encrypted) these are the standar but you can configure 
+for listening other port but you will need to put the port listening after the domain like this https://fake-pizza-domain:8000
+
+*HTTP PROTOCOL IN DEPTH*
+
+The HTTP protocol comes down to a serie of request and responses. The browser make a request and the web server make a response. An HTPP response
+consists of two parts: the response header and the response body.The response header contain metadata such as a timestap of the response
+
+-Requests
