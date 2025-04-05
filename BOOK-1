@@ -609,4 +609,17 @@ Note that you can see the javascript code like html by inscpecting a web page so
 
 -PHP: if we want truly interactive pages, we need to use a server-side programming language which generates HTML and send it back to the clien
 browsing the page. PHP is executed by the web server and is sent to an HTTP request you can't see PHP by inspecting the web page
-you will need to set up a web server to support php.
+you will need to set up a web server to support php. You can look on internet how to setup a webserver with PHP
+
+<html>
+	<head>
+		<title>This is a Title</title>
+	</head>
+<body>
+	<h1>This is a heading</h1>
+	<p>This is a paragraph</p>
+	<p>A second one</p>
+	<p>The result of 2 + 2 is <?php echo(2+2); ?></p>
+</body>
+</html>
+
