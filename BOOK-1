@@ -550,3 +550,63 @@ The HTTP protocol comes down to a serie of request and responses. The browser ma
 consists of two parts: the response header and the response body.The response header contain metadata such as a timestap of the response
 
 -Requests
+
+-GET: A get request asks to retrieve a specified resource. When you visit a page such as 'https://some-fake-domain.fake/about.html' you are asking to retrieve
+the about.html file from the web root
+
+-HEAD: HEAD ask to retrieve a specific resource but without the response body. It retrieve only the metadata without the data.
+
+-POST: POST request is used to send data to the web server without expecting anything back for HTML form for example
+
+-PUT: PUT request is used to ask the web server to store data sent in the request at the path requested a PUT request at 
+https://some-fake-domain.fake/about.html would add the data sent to the web server in the PUT request as 'about.html'
+
+-DELETE: request deletes the resource specified in the request
+
+
+-Response
+
+HTTP response is split into the response header and the response body. The response body contains the data that was retrieved
+if you sent a GET request to some-fake-domain.com/about.html then the response body would contain the content of about.html
+The response header contain the metadata about the request like HTTP response code
+like: 200: OK, provide you with the answer to this request
+      302: Found, but redirect over here as this resource has moved
+      404: File not found
+      500: Something went wrong internal server error
+
+HTML: html is a markup language rather than programming HTML uses tags like <html></html>
+<html>
+    <head>
+        <title> This is the title </title>
+    </head>
+    <body>
+        <h1>This is a heading</h1>
+        <p>This is a paragraph of text</p>
+        <p>A second paragraph of text</p>
+    </body>
+</html>
+
+HTML is static it doesn't change based on user input. If you want a system responsive you will need something that generate html individually
+for that user and send it like PHP
+
+-Javascript: programming language that is designed to run inside a browser. It can be used to make changes to HTML even after it has been loaded onto the page
+<html>
+    <head>
+        <title> This is a site Title</Title></title>
+        <script>
+            alert("HEllo GiThUB");
+        </script>
+    </head>
+    <body>
+        <h1> This is a heading</h1>
+        <p>This is a paragraph</p>
+        <p>A second paragraph</p>
+    </body>
+</html>
+
+You should see a pop up 
+Note that you can see the javascript code like html by inscpecting a web page so isn't suitable for storing sensitive content$
+
+-PHP: if we want truly interactive pages, we need to use a server-side programming language which generates HTML and send it back to the clien
+browsing the page. PHP is executed by the web server and is sent to an HTTP request you can't see PHP by inspecting the web page
+you will need to set up a web server to support php.
