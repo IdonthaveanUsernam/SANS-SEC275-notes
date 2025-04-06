@@ -623,3 +623,25 @@ you will need to set up a web server to support php. You can look on internet ho
 </body>
 </html>
 
+*Cookies and local storage*
+
+-Cookies: tiny file that a web server can create on a visitor's computer cookie are created to store login information for
+a website for exemple so you don't need to manually connect but cookies has expire date.
+
+-Local storage: site can also store files on your computer (5mb max) in the browser's local storage. Local storage is intended
+to provide much more powerful and sizeable storage.
+
+*NETWORKIN BASICS*
+
+-Types of network: network is a set of devices that are connected together. The largest network in the world is internet it's an
+WAN (wide area network), smaller network like office networks are called LAN (Local Area Network). Typically we connect devices over a LAN
+using ethernet cable or radio signals(WIFI), The lan will have a router, which connects to the internet
+
+-Topologies: the way network is physically laid out is called network topology.
+
+The most common is the 'star' topology this his where each computer in a network connects to a central point such as a switch.
+
+see an example here: https://imgur.com/a/H16AkKw
+Another one less common is bus topolgy, in wich all devices are connected by the same ethernet cable. This topology is not
+very common as only one computer can communicate at any one time
+
