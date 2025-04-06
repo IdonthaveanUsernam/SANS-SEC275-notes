@@ -203,7 +203,7 @@ Ex: Ubuntu Linux, Mac OS, Android
 Each OS as it own strengths and weaknesses
 
 -Kernel: first part of the OS loaded and has complete control over the computer. Control the computer most sensitive information and functionality it is loaded into a protected region of memory
-        to prevent aaccidental or malicious corruption by other programs. It is responsible of the loading of new programs, handling input and output between perpherals, and managing access to the hardware resources
+        to prevent accidental or malicious corruption by other programs. It is responsible of the loading of new programs, handling input and output between perpherals, and managing access to the hardware resources
 -Process: A serie of actions or step taken in order to achieve a particular end, a process is created on a computer when a program is requested to be loaded
         and contains all the informations needed for execution
 -Interrupt: Signal that is sent to CPU, which alerts the CPU to a task requirinf it's immediate attention. An interrupt will halt the CPU and cause it to begin executing the corresponding interrupt handler
@@ -661,3 +661,62 @@ Routers: device that connect two network together. Most commonly this will be co
 NIC(Network Interface Card), piece of hardware attached to a computer, which allows the computer to inteface with a network
 A computer with an Ethernet port has a NIC inside of it. And computer wich have wireless built-in will have a NIC too computer that 
 can support wireless and cable has 2 NIC
+
+MAC Address (Media Acccess Control) is an address burned into the NIC when it produced. MAC address are meant to be globally
+unique. no two NICs are supposed to have the same MAC. In practice it's hard to verify the claim. MAC are used to identify
+computers on a local network. 
+Here is an example of a MAC address: 34:13:65:76:09:86
+
+IP Adreses: it identifies your computer on the network and allows other computer on the network to find your computer. Each NIC
+is assigned an IP address when it connects to a network
+
+-Private IP: is the one that is assigned to your computer on the LAN. Private IP have to fall wihtin certain  ranges and are only accessible
+to computer on the same LAN, two computer on the LAN can't have the same IP or it will causes some problems.
+
+-Public IP Adresse: Public IP adress is internet facing. In most home and small business network setup, the entire LAN will have only
+a single public IP address, which is shared by all computers on the LAN. The ability to share an IP adress is handled by something called NAT(Network Adress Translation)
+
+-Packets: packet is a unit of data that can be transmiteted over the network. All data must be encapsulated into packet and this packet
+contain data and other informations such as the destination IP adress and MAC address. The maximum size of a packet depend on serveral
+factors, such as the protocol. but generally it's about 64Kib
+
+*Protocols*: set of rules which govern how two or more parties interact with one another like TCP(Transmission Control Protocol) and
+UDP(User Datagram protocol)
+
+-TCP protocol: it's a protocol designed with the reliable delivery of data in mind. The protocol involves a connection setup called
+TCP handshake which prepare two computer to talk to each other. After this handshake the data is sent. After the connection is done, the TCP
+teardown closes the connection. The TCP protocol includes measures to re-transmit data that waas lost or corrupted.
+
+-Ports: port is a communication channel for applications running on the OS. Port are numbered between 0 and 65535. Two applications
+can't listen to the same port.Once an application listen to a port it is known as being bound to that port
+
+-UDP protocol: key to application that require fast data transmission without reliability. Because UDP don't need Handshake and don't detect if packet
+is missing or corrupted and don't do retransmission, it is much faster than TCP. It is generally used In VoiP or video chat
+
+-Ports: 0-65335 but there are separated from TCP so it doesn't conflict with TCP ports
+
+*Networking in depth*
+
+IPv4: IPv4 are written is the format xxx.xxx.xxx.xxx there are 4 bytes long but it's old and all IPv4 are used so we use IPv6 now
+
+Network Address Translation: NAT was designed as a way to delay the problem of no more IPv4 by reserving Private IP ranges but thes Private IP
+can't communicate outside the LAN but everybody in a seperate LAN can have the same private IP address. The router is responsible
+for converting the packet that come from Public IP addresses to private IPs
+
+IPv6: The new internet protocol standard which was designed to solve the IP address shortage who looke like this not shortened
+2001:0db8:0000:0000:0000:ff00:0042:8329 and like this after shortening rules 2001:db8::ff00:42:8329
+IPv6 are 16 bytes long. We still use NAT because it's in fact a good firewall because it's prevent people from accessing directly to you're computer
+unless you set up a NAT forwarding rule at the router to allow it
+
+Subnets: it is a sub-network. It's a way of splitting up a network into segments. An IP consist of two parts. The network identifier and the host identifier.
+The problem is, in the IP the part that is the network identifer and the part that is the host identifier are variable. We need something
+to tell us how big the network identifier is and how big the host identifier is so we have the subnet mask to tell us.
+For example 192.168.0.1 is the computer IP and the subnet mask is 255.255.0.0 that mean the first two bytes are the network identifier
+and the 2 other bytes are the host identifier. This LAN can theoretically have 2¹⁶-2 (.0 and .255) reserved computers connected you can have other
+subnet mask like 255.255.255.0  that will permit fewer hosts 2⁸-2 but much more networks, or 255.128.0.0 but here you will need some
+calculations.
+
+Classless Inter-Domain Routing (CIDR): CIDR is a short way of writing a subnet mask. Let's take the example from above;
+to show the network 192.168.0.0 with a subnet mask of 255.255.0.0 then in CIDR notation that would be 192.168.0.0/16. The /16
+is the number of bits that is the network identifiers. ANother example, the subnet mask of 255.0.0.0 would be written 192.168.0.0/8 and 
+192.168.0.0/24 for 255.255.255.0
