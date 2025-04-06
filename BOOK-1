@@ -645,3 +645,19 @@ see an example here: https://imgur.com/a/H16AkKw
 Another one less common is bus topolgy, in wich all devices are connected by the same ethernet cable. This topology is not
 very common as only one computer can communicate at any one time
 
+bus topology: https://imgur.com/a/gCnmJ9N
+
+
+*NETWORK HARDWARE*
+
+Switches: device that connects computer on a network together many devices can be connected to a switch and the switch will receive all data
+on the network and decide which cable send the data through
+
+Hubs: same as switch but will send data that he received to every devices connected to the hub. In fact Wireless acces poins
+send radio swaves so there is no way to direct data to only one device. That mean all wireless access points are actually hubs
+
+Routers: device that connect two network together. Most commonly this will be connecting the LAN to internet.
+
+NIC(Network Interface Card), piece of hardware attached to a computer, which allows the computer to inteface with a network
+A computer with an Ethernet port has a NIC inside of it. And computer wich have wireless built-in will have a NIC too computer that 
+can support wireless and cable has 2 NIC
