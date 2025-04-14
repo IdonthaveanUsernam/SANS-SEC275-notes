@@ -963,3 +963,42 @@ TXT record: USed for storing any other textual data associated with the domain n
 and DKIM
 
 *PACKETS & PROTOCOLs*
+
+-ICMP (Internet Control Message Protocol) desigend for transmitting error messagese and operational information between hosts on a
+network. ICMP packets consists of a 'type' and a 'code'. Used to describe the packet's purpose. For example a ping request use
+an ICMP type 8 code 0 packet, it's called an ICMP echo request packet. Once the host received the packet it will respond with
+an ICMP type 0 code 0
+
+-DHCP(Dynamic Host Configuration) DHCP allow a DHCP server to assign network configuration settings to hosts automatically when they
+join the network and remove the possibility of IP address conflicts because DHCP know which IP addresses it has already assigned)
+
+*OSI Model* (Open System Interconnection) is a way of describing how computers communicate with each other. OSI is theoretical because
+not all protocols will feat neatly into the seven layers.
+
+Layer7-Application
+Layer6-Presentation
+Layer5-Session
+Layer4-Transport
+Layer3-Network
+Layer2-Data Link
+Layer1-Physical
+
+You start at the top and work your way down to the bottom the data is converted into electrical signal at layer 1. And the
+computer receiving that information works up to the application layer
+
+Application layer: HTTP or FTP because the web browser will form the request like GET necessary for displaying a page
+
+Presentation Layer: XML or JSON deal with formatting data in a way that intended recipient can understand. Encryption also happen
+in the presentation layer
+
+Session Layer: handle opening, closing, managing connections between computers. !!!TCP is actually a transport layer protocol
+
+Transport Layer: responsible for end-to-end connections between computers like TCP & UDP. That at this point where the TCP or UDP
+header gets added to the packet
+
+Network Layer: responsible for routing the packet over the internet. Like IP
+
+Data Link layer: Responsible for encoding & decoding packets into bits. At this point the destination and source MAC address is added
+to the packet, indicating which network card on the network the packet is going to next
+
+Physical layer: responsible for converting the packet into electrical signals which are sent over the network
