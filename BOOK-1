@@ -1002,3 +1002,80 @@ Data Link layer: Responsible for encoding & decoding packets into bits. At this 
 to the packet, indicating which network card on the network the packet is going to next
 
 Physical layer: responsible for converting the packet into electrical signals which are sent over the network
+
+*TCP/IP model*
+
+Another theoretical model desgined to show how computers communicates
+
+Layer4: Application
+Layer3: Transport
+Layer2: Internet
+Layer1: Network access
+
+-Application layer: same as OSI but include presentation layer
+
+-Transport Layer: same as OSI
+
+-Internet Layer: same as network layer from OSI
+
+-Network access layer: combination of data link and physical layer from OSI
+
+
+Packet Headers:
+
+When at application layer a packet , we add headers at each layer from the OSI model and when the packet arrive 
+at destination at each layer we remove headers until all the way up to the application layer
+
+ARP (Address Resolution Protocol)
+
+The ethernet protocol require a destination MAC address. The computer ask for the destination MAC address by sending a broadcast request
+to everyron on the local network asking for the MAC address of 192.168.5.12 for example ant 192.168.5.12 will respond with its MAC
+adress. (This is only for the LAN) if you communicate outside the LAN, the computer will ask for the router MAC address using ARP
+
+DOS (Denial of Service) attack consume resource and prevent customers from connecting by using a sheer number of packets
+and huge bandwith to saturate the internet connection of a server
+
+DDOS (Distributed Denial of Service) is like DOS but attcker use a huge number of systems to flood the server
+
+*Servers and Services*
+
+Server receive connections from clients and are a location where lots
+of data is held
+CIS benchmark explain how to protect your server
+
+-Server hardware: A server is simply a computer which runs software that provides service but can have specialized hardware
+
+ Some Different types of servers:
+Web server
+DNS server
+DHCP server
+Log server
+Game server
+Print server
+Proxy server
+Streaming server
+
+-Web server: primary purpose is to satisfy clien request on the World Wide Web with the HTTP protocol like Apache, Nginx.
+A web server it's an application that listen to the network on a specifc set of ports for specifc protocol and they are a target 
+of choice for attackers because they are exposed publicly they can have high permission on a system and are often connected with databases (containing
+sensitive data like card details password...). An attacker could compromise a web server to get into the OS or other applications and
+work their way to the entire network
+
+-Client side: the device that is used to connect to the web site and execute the code that it get from the web server
+-Server-side: the device that do the actual computation
+
+-Error messages
+
+100 continue
+200 OK: the request has been completed with no errors
+202 Accepted: Received but have not yet done anything about it
+301 Moved Permanently: Usually, the new URL is given in the response
+400 Bad request: Invalid Syntax error
+401 Unauthorized: you are not allowed without logging in
+403: Same as 401 but you don't have the required privileges
+404 Not found: Nobody knowws where that URL is 
+408 Request timeout: The server is shutting you down for idleness
+500 Internal server erro: The server has no idea what to do
+502 Bad gateway: issue with server connection
+503 Service Unavailable: Overloaded server
+504 Gateway Timeout: Servers are too slow
