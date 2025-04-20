@@ -1079,3 +1079,36 @@ work their way to the entire network
 502 Bad gateway: issue with server connection
 503 Service Unavailable: Overloaded server
 504 Gateway Timeout: Servers are too slow
+
+
+Web server practice checklist
+
+-Take a moment to review the default configuration
+-Re-read the permissions 
+-Disable the banner/versioning
+-Use checklist like the CIS benchmark
+
+
+*Database servers*
+
+Computer system that provides other computers or program with services related to accessing and retrievin data from a database.
+The front end display requested data and will run on user computer. The back end handles data analysis and storage and run on the server
+itself
+
+-Logic and databses
+
+Logic is required to desing databases to esnsure that all statements are complete. Database need to be well
+structured to be efficient 
+
+-Phpmyadmin & Adminer functions
+
+These tools provida a graphical frontend to manage the contents of a MySQL database.
+It allows you to
+-Run SQL comands
+-Export the tables into different file types
+-Search the database
+-Create copy and drop tables
+-Maintain the server
+-Administer multiple servers
+
+DNS Servers
