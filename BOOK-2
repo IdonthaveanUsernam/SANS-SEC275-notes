@@ -63,3 +63,14 @@ GCC read the code from hello-world.c and produce an executable named hello-world
 
 *Definitions*
 
+Programming: Planning, desing, coding, testing, deploying ...
+Coding: It's what you do when you're typing code to create your program
+Code: is what you write using a programming language while coding
+Script: Controls a program or perhaps many programs. 
+
+-Python DATA
+
+Print
+Our first Python Program is to just ouput 'Hello, World!'
+
+
