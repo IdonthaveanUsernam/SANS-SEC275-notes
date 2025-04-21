@@ -1111,4 +1111,12 @@ It allows you to
 -Maintain the server
 -Administer multiple servers
 
-DNS Servers
+DNS Security: By default DNS is not ecnrypted this allow anyone to monitor the path of transit. But there are some way to
+encypt it.
+
+-DNS over TLS: DoT is a way to encrypt DNS using TLS. In DoT the DNS sits on top of UDP which is wrapped with encryption, this allows
+the hiding of the content of the query and make tampering detectable as the encryption will be corrupted through modification
+
+-DNS over HTTPS: Provide the same feature by sending DNS queries over HTTP instead of UDP and the use of protocols 443 make hardrer to filter the request
+than a specific port like 853 for DoT
+
