@@ -72,5 +72,38 @@ Script: Controls a program or perhaps many programs.
 
 Print
 Our first Python Program is to just ouput 'Hello, World!'
+refer /code/hello.py
 
+Note that comments are really useful to explain hard code or even make not for yourself
+
+-Variables
+A variable is some data with a name you give it.
+Variable is a box with a label. It could contain anything you like you can add or remove content from the box or rename the label 
+refer to code/variables.py
+
+Naming variables:
+
+Some rules
+-Variables names in python can contain only alphanumerics + underscores
+-You can't start a variable name with a number
+-Usually an underscore is used when you want to make a space
+-Variable name are case sensitive: chocolate != Chocolate
+
+Variable types: every variables has its own type that decide what kind of data it can store
+
+-string: A serie of characters
+-integers: whole number positive or negative
+-float: number with a decimal point like 56.484674441
+-boolean: True or False or 1(True) and 0(False) for some programming language 
+
+Pyton is dynamically typed programming language this means you don't have to specify what type of variable is whe, you create it
+refer to code/type_variables.py
+
+-Strings
+In python anything insique " " or ' ' is a string 
+
+Escape characters: In python if you want to print out for example 'That's mine' you will get an error because
+python think that the string terminate at ' befor the s but find characters after. So you need a way to handle situations like this
+with the escape characters \ 'That\'s mine'. escape character tells our program that the next character should be interpreted as part of
+the string
 
