@@ -122,5 +122,52 @@ you can remove whitespace to the left of you're string with lstrip()
 you can remove whitespace to the right of you're string with rstrip()
 you can remove whitespace from both side with strip()
 
-refer to code/stripping_whitespace.py
 
+*Numbers*
+
+-Integers: are whole numbers, can be positive or negative
+
+refer to code/integers.py
+
+note that in python the order of operations are conserved
+
+-Floats: number that contain decimal
+
+refer to code/float.py
+
+-Booleans: type of data that is only able to be in one of two states true (1) or false (0)
+
+refer to code/bool.py
+
+*String Formatting*
+
+Another way of formatting string rather than concatenation is to use format string
+
+refer to code/string_formatting.py
+
+*Everything is data*
+
+-Characters are data
+
+character like space A,b,Z can be represented as integer from the ASCII table (you can search online for the complete ASCII table)
+
+refer to code/data.py
+
+*Lists and Tuples*
+
+when you need a collection of items, you can create list
+
+-Lists
+refer to code/list.py
+
+You can also modify a list, adding content, removing content, sort the list...
+
+refer to code/modifying_list.py
+
+-Tuples are like list but there are immutable that mean a tuple can't be modified
+
+refert to code/tuples.py
+
+-Dictionaries: like a list but allow us to associate information together in helpful pair called 'key-value' pairs
+
+refer to code/dictionarie.py
