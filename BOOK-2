@@ -107,3 +107,20 @@ python think that the string terminate at ' befor the s but find characters afte
 with the escape characters \ 'That\'s mine'. escape character tells our program that the next character should be interpreted as part of
 the string
 
+-Concatenating strings: In python, you can combien mutiple strings togehter into one
+
+refer to code/concatenating_string.py
+
+-Adding whitespace
+
+You can withespace like a tab with \t or \n for adding a new line
+
+refer code/whitespace.py
+
+-Stripping whitespace
+you can remove whitespace to the left of you're string with lstrip()
+you can remove whitespace to the right of you're string with rstrip()
+you can remove whitespace from both side with strip()
+
+refer to code/stripping_whitespace.py
+
