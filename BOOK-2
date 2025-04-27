@@ -171,3 +171,13 @@ refert to code/tuples.py
 -Dictionaries: like a list but allow us to associate information together in helpful pair called 'key-value' pairs
 
 refer to code/dictionarie.py
+
+
+*Python - Logic*
+
+-Functions: function allow to split code into smaller chunk that can be called again anytime by it's name
+You can even give paramaters to the function so the function can take you're data (arguments) and treat it wihtin the function 
+code. Functions can also return values. With functions, you can take a serie of small pieces and build a powerful and complex
+system
+
+refer to code/function.py
