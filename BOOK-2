@@ -181,3 +181,31 @@ code. Functions can also return values. With functions, you can take a serie of 
 system
 
 refer to code/function.py
+
+*Conditionals*
+
+Programs can make decisions based on data, that decision is called a conditional, which mean we check if a Specified condition is met.
+The return value is typically True or False and that value help decide what to do next.
+
+'==' for example check for equality
+
+refer to code/equality.py
+
+
+-If conditions
+
+For example, you want to run a part of code only if a certain condition is met like a user who want to register but only if
+the user don't exist. You can use If conditions
+
+refer to code/if.py
+
+-Comparaison operators aside from "==" there are other comparaisons operrators
+"==" Equal to
+"<=" less than or equal to
+">=" Greter than or equal to
+"<" Less than
+">" Greater than
+
+You can even use conditionals with lists and checks multiple conditions
+
+refer to code/conditionals.py
