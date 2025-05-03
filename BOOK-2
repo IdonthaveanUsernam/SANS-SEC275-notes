@@ -209,3 +209,19 @@ refer to code/if.py
 You can even use conditionals with lists and checks multiple conditions
 
 refer to code/conditionals.py
+
+
+-else and elif
+
+Sometimes we don't want to do anything if a condition isn't met we can use else
+elif is like else if
+
+refer to code/else.py
+
+
+-For 
+
+'for' loop allow to run code at each iteration
+you can iterate through a list for example or maybe a dictionary. But in case you don't have a list or a dictionary, you can use range() function
+
+see code/for.py
